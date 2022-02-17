@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Money Expence</title>
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/2dfd1101e8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- start header -->
+    <header>
+      <h1 class="text-6xl text-center text-green-900 font-bold mt-16">
+        My Money Expence<span class="font-bold text-black-500 text-center">
+          <i class="fa-solid fa-money-bill-1"></i>
+        </span>
+      </h1>
+      <!-- end header -->
+    </header>
+    <!-- start main -->
+    <main>
+      <!-- start section -->
+
+      <section
+        class="m-10 p-10 bg-white rounded gap-8 grid lg:grid-cols-2 sm:grid-cols-1"
+      >
+        <div>
+          <img
+            class="w-full h-full border rounded"
+            src="images/money.png"
+            alt=""
+          />
+        </div>
+        <div class="border border-gray-200">
+          <div class="flex flex-col p-8 items-center">
+            <h3 class="text-3xl mb-4 font-bold text-center text-black-400">
+              Income
+            </h3>
+            <p class="font-semibold text-xl">
+              Income:
+              <input
+                id="income-field"
+                class="border border-gray-400 bg-gray-300 h-10 rounded w-3/4 mb-4 px-2"
+                type="text"
+                placeholder="required"
+              />
+            </p>
+            <div>
+              <h3 class="text-3xl mb-4 font-bold text-center text-black-400">
+                Expence
+              </h3>
+              <p class="font-semibold text-xl">
+                Food:
+                <input
+                  id="food-field"
+                  class="border border-gray-400 bg-gray-300 h-10 rounded w-3/4 mb-4 px-2"
+                  type="text"
+                  placeholder="required"
+                />
+              </p>
+              <p class="font-semibold text-xl">
+                Rent:
+                <input
+                  id="rent-field"
+                  class="border border-gray-400 bg-gray-300 h-10 rounded w-3/4 mb-4 px-2"
+                  type="text"
+                  placeholder="required"
+                />
+              </p>
+              <p class="font-semibold text-xl">
+                Clothes:
+                <input
+                  id="clothes-field"
+                  class="border border-gray-400 bg-gray-300 h-10 rounded w-3/4 mb-4 px-2"
+                  type="text"
+                  placeholder="required"
+                />
+              </p>
+              <button id="calculation"
+                class="border rounded bg-blue-400 w-2/4 mx-24 p-3 text-white text-center text-2xl">
+                Calculate
+              </button>
+              <h3 class="text-center font-semibold pb-4 text-2xl">Total expences:<span id="total-expenses">00</span></h3>
+              <h3 class="text-center font-semibold pb-4 text-2xl">Balance:<span id="balance">00</span></h3>
+             </div>
+              <div>
+
+                <p class="font-semibold text-2xl">Save:
+                  <input
+                    id="input-field"
+                    class="border border-gray-400 rounded bg-gray-300 h-10 w-1/4 mb-4 px-2"
+                    type="text"
+                    placeholder="required"/> % <button id="calculate" class="border border-gray-400 bg-blue-400 px-8 py-2 rounded ">save</button>
+                </p>
+                <h3 class="text-center font-semibold text-2xl">Saving Amount:<span id="save">00</span></h3>
+                <h3 class="text-center font-semibold text-2xl">Remaining Balance:<span id="remain">00</span></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end main -->
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <script src="money.js"></script>
+  </body>
+</html>
